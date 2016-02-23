@@ -8,11 +8,7 @@ for(var i = 0; i < 9; i++){
     squares.style.width = '11.1%';
     squares.style.float = 'left';
     squares.style.paddingTop = '10%';
-      if((j + i) % 2 === 0){
-        squares.style.backgroundColor = 'black';
-      } else {
-        squares.style.backgroundColor = 'red';
-      }
+    squares.style.backgroundColor = "#"+((1<<24)*Math.random()|0).toString(16);
     body.appendChild(squares);
   }
 }
